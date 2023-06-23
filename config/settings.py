@@ -127,3 +127,12 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+REST_FRAMEWORK = {
+    # "DEFAULT_PERMISSION_CLASSES": [
+    #     "rest_framework.permissions.IsAuthenticated",
+    # ]
+    "DEFAULT_PERMISSION_CLASSES": [
+    "rest_framework.permissions.DjangoModelPermissions",
+    ],
+}
