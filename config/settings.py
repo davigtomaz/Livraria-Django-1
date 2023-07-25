@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    'usuario',
     'livraria',
 ]
 
@@ -136,3 +137,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 #     "rest_framework.permissions.DjangoModelPermissions",
 #     ],
 # }
+
+
+AUTH_USER_MODEL = "usuario.Usuario"
