@@ -14,6 +14,7 @@ class ItensCompraInline(admin.TabularInline):
     model = ItensCompra
 
 
+
 @admin.register(Compra)
 class CompraAdmin(admin.ModelAdmin):
     inlines = [ItensCompraInline]
